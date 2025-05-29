@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+
+  --primary-color: hsl(0, 50%, 50);
+}
