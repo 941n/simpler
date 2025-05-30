@@ -6,3 +6,7 @@
 
   --primary-color: hsl(0, 50%, 50);
 }
+
+body {
+  background-color: hsl(0, 0%, 40%);
+}

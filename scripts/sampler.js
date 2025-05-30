@@ -1,14 +1,14 @@
-const padsContainer = document.querySelector('#pads');
-const pads = document.querySelectorAll('#pads li');
+const pads = document.querySelectorAll('.pad');
+const notePads = document.querySelectorAll('.note');
+const ladiesAndGentlemen = document.querySelector('#ladies-and-gentlemen');
+const lookAtYou = document.querySelector('#look-at-you');
 const pausePad = document.querySelector('#pause');
 
-pads[pads.length - 1].id = 'pause';
+const audios = document.querySelectorAll('.sample');
 
-for (let i = 0; i < pads.length; i++) {
-  pads[i].classList.add('pad');
-  pads[i].innerText = `pad ${i + 1}`;
-  pads[i].dataset.sound = `${i + 1}.m4a`;
+const noteSamplesAudio = document.querySelector('#note-audio');
+const startIntroAudio = document.querySelector('#start-intro-audio');
+const voiceSamplesAudio = document.querySelector('#voice-sample-audio');
 
-  pads[i].addEventListener('click', sampleContol);
-  pads[i].addEventListener('keydown', sampleContol);
-}
+pads.forEach(pad => pad.addEventListener('click', sampleContol));
+pads.forEach(pad => pad.addEventListener('keydown', sampleContol));

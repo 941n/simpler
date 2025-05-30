@@ -1,5 +1,6 @@
 #pads {
-  padding: 0;
+  margin: 0;
+  padding: 1rem;
 
   list-style: none;
   display: grid;
@@ -16,8 +17,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: hsl(0, 0%, 60%);
 
   font-weight: 900;
   font-size: 0.8rem;
+
+  border-radius: 3px;
 }
