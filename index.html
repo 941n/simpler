@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,37 +21,76 @@
   </head>
   <body>
     <h1 id="track-name">runaway</h1>
-
-    <div id="sampler">
+    <div>
+      <!-- <h2>MPC 2000</h2> -->
       <ul id="pads">
-        <li class="pad note" data-path="first_note.m4a"></li>
-        <li class="pad note" data-path="second_note.m4a"></li>
-        <li class="pad note" data-path="third_note.m4a"></li>
-        <li class="pad note" data-path="fourth_note.m4a"></li>
-        <li class="pad note" data-path="fiveth_note.m4a"></li>
-        <li class="pad note" data-path="sixth_note.m4a"></li>
-        <li class="pad note" data-path="seventh_note.m4a"></li>
-        <li class="pad note" data-path="eighth_note.m4a"></li>
-        <li id="start-intro" class="pad" data-path="start_intro.m4a"></li>
+        <li id="" class="pad" data-samplepath="samples/first_note.m4a">
+          <audio src=""></audio>
+        </li>
+        <li id="" class="pad" data-samplepath="samples/second_note.m4a">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="samples/third_note.m4a">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="samples/fourth_note.m4a">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="samples/fiveth_note.m4a">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="samples/sixth_note.m4a">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="samples/seventh_note.m4a">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="samples/eighth_note.m4a">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="samples/start_intro.m4a">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="samples/look_at_you.m4a">
+          <audio src=""></audio>
+        </li>
+
         <li
-          id="look-at-you"
-          class="pad voice-sample"
-          data-path="look_at_you.m4a"
-        ></li>
-        <li
-          id="ladies-and-gentlemen"
-          class="pad voice-sample"
-          data-path="ladies_and_gentlemen.m4a"
-        ></li>
-        <li class="pad" data-path=""></li>
-        <li class="pad" data-path=""></li>
-        <li class="pad" data-path=""></li>
-        <li class="pad" data-path=""></li>
-        <li class="pad" data-path="" id="pause"></li>
+          id=""
+          class="pad"
+          data-samplepath="samples/ladies_and_gentlemen.m4a"
+        >
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="">
+          <audio src=""></audio>
+        </li>
+
+        <li id="" class="pad" data-samplepath="">
+          <audio src=""></audio>
+        </li>
+
+        <li id="pause" class="pad" data-samplepath="pause">
+          <audio src="">pause</audio>
+        </li>
       </ul>
     </div>
-    <audio class="sample" id="note-audio" style="display: none"></audio>
-    <audio class="sample" id="start-intro-audio" style="display: none"></audio>
-    <audio class="sample" id="voice-sample-audio" style="display: none"></audio>
   </body>
 </html>

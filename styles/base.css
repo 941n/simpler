@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
 
   font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
@@ -8,5 +12,9 @@
 }
 
 body {
-  background-color: hsl(0, 0%, 40%);
+  text-align: center;
+  /*   background-image: url('../images/R1344-017-Kanye-My-Beautiful-Dark-Twisted-Fantasy.webp');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; */
 }

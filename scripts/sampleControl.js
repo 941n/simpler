@@ -1,26 +1,23 @@
-function sampleContol(event) {
-  const pad = event.target;
-
-  if (pad === pausePad) {
-    console.log('pause');
-
-    /* noteSamplesAudio.pause();
-    startIntroAudio.pause();
-    voiceSamplesAudio.pause(); */
-    audios.pause();
-    return;
-  } else if (pad.classList.contains('note')) {
-    noteSamplesAudio.src = `samples/${pad.dataset.path}`;
-    noteSamplesAudio.play();
-  } else if (pad.classList.contains('voice-sample')) {
-    voiceSamplesAudio.src = `samples/${pad.dataset.path}`;
-    voiceSamplesAudio.play();
-  } else if ((pad.id = 'start-intro')) {
-    startIntroAudio.src = `samples/${pad.dataset.path}`;
-    startIntroAudio.play();
+async function sampleControl(e) {
+  const pad = e.target;
+  if (!pad.dataset.samplepath) {
+    console.log(`empty sample`);
   }
+  console.log(`${pad.dataset.samplepath}`);
 
-  /* 
-  console.log(`/samples/${pad.innerText}`);
-  console.dir(pad); */
+  const samplePath = pad.dataset.samplepath;
+
+  const audio = pad.querySelector('audio');
+  const audios = document.querySelectorAll('audio');
+
+  if (!samplePath) {
+    return;
+  } else if (pad.id === 'pause') {
+    audios.forEach(audio => {
+      audio.pause();
+    });
+    return;
+  }
+  audio.src = samplePath;
+  audio.play();
 }

@@ -1,26 +1,20 @@
 #pads {
-  margin: 0;
-  padding: 1rem;
-
-  list-style: none;
-  display: grid;
-  justify-content: center;
-
+  margin-top: 2rem;
+  display: inline-grid;
+  padding: 3rem 3rem 3rem 3rem;
   gap: 1rem;
-
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: repeat(4, 6rem);
+
+  justify-content: center;
+  background-color: hsl(39, 8%, 64%);
+
+  border-radius: 4px;
 }
 
-.pad {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: hsl(0, 0%, 60%);
+#pads li {
+  background-color: hsl(40, 8%, 61%);
 
-  font-weight: 900;
-  font-size: 0.8rem;
-
-  border-radius: 3px;
+  border-radius: 4px;
+  border: 0.6px solid;
 }
