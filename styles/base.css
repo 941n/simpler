@@ -1,4 +1,5 @@
 * {
+  font-size: 10px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,7 +13,11 @@
 }
 
 body {
-  text-align: center;
+  height: 100%;
+  display: flex;
+
+  background-color: hsl(39, 8%, 64%);
+
   /*   background-image: url('../images/R1344-017-Kanye-My-Beautiful-Dark-Twisted-Fantasy.webp');
   background-repeat: no-repeat;
   background-size: 100% 100%;
