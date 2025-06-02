@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simpler</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/sampler.css" />
+
+    <script src="scripts/sampleControl.js" defer></script>
+    <script src="scripts/sampler.js" defer></script>
+  </head>
+  <body>
+    <h2 id="sampler-name">
+      <span id="model">MPC</span><span id="series">20</span>
+    </h2>
+
+    <ul id="pads">
+      <li class="pad-wrap" id="pad-1">
+        <div class="pad-info">
+          <span class="pad-num">PAD 1</span><span class="pad-command">AB</span>
+        </div>
+        <div class="pad" data-samplepath="samples/first_note.m4a"></div>
+      </li>
+      <li class="pad-wrap" id="pad-2">
+        <div class="pad-info">
+          <span class="pad-num">PAD 2</span><span class="pad-command">CD</span>
+        </div>
+        <div class="pad" data-samplepath="samples/second_note.m4a"></div>
+      </li>
+      <li class="pad-wrap" id="pad-3">
+        <div class="pad-info">
+          <span class="pad-num">PAD 3</span><span class="pad-command">EF</span>
+        </div>
+        <div class="pad" data-samplepath="samples/third_note.m4a"></div>
+      </li>
+      <li class="pad-wrap" id="pad-4">
+        <div class="pad-info">
+          <span class="pad-num">PAD 4</span><span class="pad-command">GH</span>
+        </div>
+        <div class="pad" data-samplepath="samples/fourth_note.m4a"></div>
+      </li>
+      <li class="pad-wrap" id="pad-5">
+        <div class="pad-info">
+          <span class="pad-num">PAD 5</span><span class="pad-command">IJ</span>
+        </div>
+        <div class="pad" data-samplepath="samples/fiveth_note.m4a"></div>
+      </li>
+      <li class="pad-wrap" id="pad-6">
+        <div class="pad-info">
+          <span class="pad-num">PAD 6</span><span class="pad-command">KL</span>
+        </div>
+        <div class="pad" data-samplepath="samples/sixth_note.m4a"></div>
+      </li>
+      <li class="pad-wrap" id="pad-7">
+        <div class="pad-info">
+          <span class="pad-num">PAD 7</span><span class="pad-command">MN</span>
+        </div>
+        <div class="pad" data-samplepath="samples/eighth_note.m4a"></div>
+      </li>
+      <li class="pad-wrap" id="pad-8">
+        <div class="pad-info">
+          <span class="pad-num">PAD 8</span><span class="pad-command">OP</span>
+        </div>
+        <div class="pad" data-samplepath="samples/start_intro.m4a"></div>
+      </li>
+      <li class="pad-wrap" id="pad-9">
+        <div class="pad-info">
+          <span class="pad-num">PAD 9</span><span class="pad-command">QR</span>
+        </div>
+        <div class="pad" data-samplepath="samples/look_at_you.wav"></div>
+      </li>
+      <li class="pad-wrap" id="pad-10">
+        <div class="pad-info">
+          <span class="pad-num">PAD 10</span><span class="pad-command">ST</span>
+        </div>
+        <div
+          class="pad"
+          data-samplepath="samples/ladies_and_gentlemen.wav"
+        ></div>
+      </li>
+      <li class="pad-wrap" id="pad-11">
+        <div class="pad-info">
+          <span class="pad-num">PAD 11</span><span class="pad-command">UV</span>
+        </div>
+        <div class="pad"></div>
+      </li>
+      <li class="pad-wrap" id="pad-12">
+        <div class="pad-info">
+          <span class="pad-num">PAD 12</span><span class="pad-command">WX</span>
+        </div>
+        <div class="pad"></div>
+      </li>
+      <li class="pad-wrap" id="pad-13">
+        <div class="pad-info">
+          <span class="pad-num">PAD 13</span><span class="pad-command">YZ</span>
+        </div>
+        <div class="pad"></div>
+      </li>
+      <li class="pad-wrap" id="pad-14">
+        <div class="pad-info">
+          <span class="pad-num">PAD 14</span
+          ><span class="pad-command">&#35;&</span>
+        </div>
+        <div class="pad"></div>
+      </li>
+      <li class="pad-wrap" id="pad-15">
+        <div class="pad-info">
+          <span class="pad-num">PAD 15</span
+          ><span class="pad-command">- !</span>
+        </div>
+        <div class="pad"></div>
+      </li>
+      <li class="pad-wrap" id="pad-16">
+        <div class="pad-info">
+          <span class="pad-num">PAD 16</span
+          ><span class="pad-command">( )</span>
+        </div>
+        <div class="pad" id="pause-pad"></div>
+      </li>
+    </ul>
+  </body>
+</html>
