@@ -66,6 +66,11 @@
   border: 0.1rem solid;
 }
 
+.pad:hover,
+.pad:active {
+  background-color: rgb(92, 78, 83);
+}
+
 #pause-pad {
   background-color: rgb(116, 0, 6);
 }
