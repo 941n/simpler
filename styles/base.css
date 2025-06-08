@@ -1,0 +1,36 @@
+* {
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* sampler.css 같은 데 넣어줘 */
+html,
+body {
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+}
+
+.pad {
+  touch-action: manipulation;
+}
+
+body {
+  display: grid;
+  min-height: 80vh;
+
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+
+  background-color: rgb(140, 136, 134);
+}

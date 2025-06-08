@@ -1,0 +1,82 @@
+#sampler-name {
+  margin: 0 0 2rem 0;
+  width: fit-content;
+}
+
+#sampler-name span {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+
+  -webkit-text-stroke: 3px;
+  paint-order: stroke fill;
+
+  letter-spacing: 6px;
+
+  border-bottom: 0.4rem solid;
+}
+
+#sampler-name #model {
+  -webkit-text-fill-color: rgb(140, 136, 134);
+}
+
+#sampler-name #series {
+  border-color: rgb(116, 0, 6);
+}
+
+#pads {
+  display: grid;
+  padding: 3rem;
+
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  border-radius: 1px;
+  margin: auto;
+
+  background-color: rgb(81, 80, 86);
+}
+
+.pad-wrap {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.2rem;
+}
+
+.pad-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-left: 0.4rem;
+}
+
+.pad-info .pad-command {
+  color: rgb(151, 147, 154);
+}
+
+.pad {
+  width: 6rem;
+  height: 6rem;
+
+  background-color: rgb(72, 63, 66);
+  border-radius: 2px;
+  border: 0.1rem solid;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.pad:hover,
+.pad:active {
+  background-color: rgb(92, 78, 83);
+}
+
+#pause-pad {
+  background-color: rgb(116, 0, 6);
+}
