@@ -2,11 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      user-scalable="no"
+    />
     <title>simpler</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/favicon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,10 +22,15 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/sampler.css" />
 
-    <script src="scripts/sampleControl.js" defer></script>
-    <script src="scripts/sampler.js" defer></script>
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/01.sampler.js" defer></script>
   </head>
   <body>
+    <div id="backdrop"></div>
+    <aside id="config-overlay">
+      <button>X</button>
+      <p>Please mute off or wearing earphones</p>
+    </aside>
     <h2 id="sampler-name">
       <span id="model">MPC</span><span id="series">20</span>
     </h2>

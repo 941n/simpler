@@ -25,6 +25,8 @@
 }
 
 #pads {
+  touch-action: manipulation;
+
   display: grid;
   padding: 3rem;
 
@@ -64,6 +66,8 @@
   background-color: rgb(72, 63, 66);
   border-radius: 2px;
   border: 0.1rem solid;
+
+  cursor: pointer;
 }
 
 .pad:hover,
