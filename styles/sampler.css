@@ -25,6 +25,8 @@
 }
 
 #pads {
+  touch-action: manipulation;
+
   display: grid;
   padding: 3rem;
 
