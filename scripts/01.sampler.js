@@ -20,8 +20,7 @@ async function loadSample(samplePath) {
 document.addEventListener(
   'DOMContentLoaded',
   async () => {
-    if (audioCtx.state !== 'running') await audioCtx.resume();
-    console.log('Audio context is running');
+    await audioCtx.resume();
   },
   { once: true }
 );
