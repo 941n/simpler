@@ -18,7 +18,7 @@ async function loadSample(samplePath) {
 }
 
 document.addEventListener(
-  'DOMContentLoaded',
+  'click',
   async () => {
     await audioCtx.resume();
   },
